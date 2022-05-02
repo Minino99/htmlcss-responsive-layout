@@ -1,0 +1,100 @@
+/* 
+Breakpoints
+  576px - mobile
+  768px - tablet
+  1200px - desktop
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+:root {
+    --color-primary: #9792e4;
+    --color-secondary: #0084fd;
+    --color-secondary-light: #b5ddff;
+    --color-tertiary: #FDC15F;
+}
+
+/* fine reset */
+
+header{
+    background-color: var(--color-secondary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.headercontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    max-width: 1172px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.section {
+    padding: 2rem 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.col-1 {
+    flex-basis: calc(100% / 3);
+}
+
+.col-2 {
+    flex-basis: calc((100% / 3) * 2);
+}
+
+.col-3 {
+    flex-basis: 100%;
+}
+
+.headercontainer a img{
+    width: 80px;
+    padding: 1rem 0;
+}
+
+.headercontainer nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.headercontainer nav ul a{
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.btn{
+    border-radius: 15px;
+    padding: 0.5rem 0.8rem;
+}
+
+.bg-white{
+    background-color: white;
+}
