@@ -30,6 +30,7 @@ h2 {
     --color-secondary-light: #b5ddff;
     --color-tertiary: #FDC15F;
     --color-lightgrey: #62788A;
+    --color-footer: #333333;
     --gap: 1.5rem;
 }
 
@@ -256,8 +257,8 @@ body>main>div.section.bg-primary>div>div>div:nth-child(1)>p {
     color: white;
 }
 
-body>main>div.section.bg-primary>div>div {
-    padding: 0 7rem;
+/* body>main>div.section.bg-primary>div>div {
+    padding: 0 7rem; */
 
 }
 
@@ -329,4 +330,100 @@ body>main>div.section.bg-primary>div>div>div.col.bg-white.radius.devcard.mediump
 
 #benefitparagraph {
     color: var(--color-lightgrey);
+}
+
+.aboutusimg {
+    max-width: 250px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 2rem 0;
+}
+
+.aboutus h2{
+    color: var(--color-primary);
+    padding-bottom: 3rem;
+    font-size: 4rem;
+}
+
+.aboutus p {
+    font-size: 1.1rem;
+    line-height: 2.5rem;
+}
+
+.aboutus .col-2{
+    padding: 0rem 4rem;
+    position: relative;
+}
+
+.aboutus .col-1{
+    padding: 0rem 4rem;
+}
+
+.aboutus .col-1 h3{
+    color: var(--color-primary);
+    font-size: 1.7rem;
+}
+
+.bigquote{
+    position: absolute;
+    color: var(--color-primary);
+    left: 72%;
+    font-size: 5rem;
+}
+
+.aboutus .btn{
+    background-color: var(--color-primary);
+    color: white;
+    padding: 0.5rem 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.container.getstarted{
+    color: white;
+}
+
+.getstarted h3{
+    font-size: 3rem;
+}
+
+.getstarted h2{
+    font-size: 5rem;
+    color: var(--color-tertiary);
+}
+
+.getstarted .paragraph{
+    max-width: 500px;
+    line-height: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container.getstarted div:first-child{
+    padding: 2rem 0;
+}
+
+
+.container.getstarted .btn{
+    background-color: white;
+    color: var(--color-primary);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    font-weight: 700;
+    padding: 2rem 5rem;
+    border-radius: 50px;
+    margin-bottom: 2rem;
+}
+
+footer{
+    background-color: var(--color-footer);
+    color: white;
+    padding: 2rem 0;
+}
+
+footer.container{
+    max-width: 500px;
 }
