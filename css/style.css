@@ -64,7 +64,7 @@ main {
     padding-bottom: 2.5rem;
 }
 
-.mediummarginbottom{
+.mediummarginbottom {
     margin-bottom: 2.5rem;
 }
 
@@ -288,11 +288,45 @@ body>main>div.section.bg-primary>div>div>div.col.bg-white.radius.devcard.mediump
     margin: 2rem 0;
 }
 
-.partnercard i{
+.partnercard i {
     font-size: 2rem;
 }
 
-.partnername{
+.partnername {
     font-size: 1.1rem;
     font-weight: 700;
+}
+
+.benefitcard {
+    border-radius: 22px;
+    padding: 1rem;
+}
+
+.benefitnumber {
+    padding-top: 2rem;
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.benefitcard h3 {
+    color: var(--color-primary);
+}
+
+.benefitcard .btn {
+    background-color: var(--color-primary);
+    color: white;
+    font-weight: 700;
+    padding: 0.7rem 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.benefittitle {
+    color: white;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+#benefitparagraph {
+    color: var(--color-lightgrey);
 }
