@@ -11,9 +11,17 @@ Breakpoints
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
 }
 
 :root {
@@ -27,7 +35,7 @@ body{
 
 /* fine reset */
 
-header{
+header {
     background-color: var(--color-secondary);
     position: fixed;
     top: 0;
@@ -36,29 +44,45 @@ header{
     z-index: 1;
 }
 
-main{
+main {
     padding-top: 90px;
 }
 
-.mediumpadding{
+.mediumpadding {
     padding: 2rem;
 }
 
-.mediumpaddingbottom{
+.ultrapaddingbottom {
+    padding-bottom: 8rem;
+}
+
+.highpaddingbottom {
+    padding-bottom: 5rem;
+}
+
+.mediumpaddingbottom {
     padding-bottom: 2.5rem;
 }
 
-.lowrlpadding{
+.mediummarginbottom{
+    margin-bottom: 2.5rem;
+}
+
+.lowpaddingbottom {
+    padding-bottom: 1.5rem;
+}
+
+.lowrlpadding {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
 
-.ultralrmargin{
+.ultralrmargin {
     margin-left: 9rem;
     margin-right: 9rem;
 }
 
-.headercontainer{
+.headercontainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,8 +96,8 @@ main{
 }
 
 .section {
+    width: 100%;
     padding-top: 2rem;
-    padding-bottom: 10rem;
 }
 
 .row {
@@ -99,87 +123,91 @@ main{
     flex-basis: 100%;
 }
 
-.headercontainer a img{
+.headercontainer a img {
     width: 80px;
     padding: 1rem 0;
 }
 
-.headercontainer nav ul{
+.headercontainer nav ul {
     list-style: none;
     display: flex;
     align-items: center;
 }
 
-.headercontainer nav ul a{
+.headercontainer nav ul a {
     color: white;
     text-decoration: none;
     padding: 1rem;
 }
 
-.btn{
+.btn {
     border-radius: 22px;
     padding: 0.5rem 0.8rem;
     display: inline-block;
     white-space: pre-wrap;
 }
 
-.bg-white{
+.primary {
+    color: var(--color-primary);
+}
+
+.bg-white {
     background-color: white;
 }
 
-.bg-secondary{
+.bg-secondary {
     background-color: var(--color-secondary);
 }
 
-.bg-secondary-light{
+.bg-secondary-light {
     background-color: var(--color-secondary-light);
     border-radius: 22px;
 }
 
-.bg-primary{
+.bg-primary {
     background-color: var(--color-primary);
 }
 
-.uppercards h3{
+.uppercards h3 {
     color: var(--color-secondary);
 }
 
-.uppercards p{
+.uppercards p {
     color: var(--color-lightgrey);
     font-weight: 700;
     line-height: 1.5rem;
 }
 
-.uppercards .btn{
+.uppercards .btn {
     color: white;
     font-weight: 700;
     padding: 0.8rem 2.5rem;
 }
 
-.uppercards .col-2{
+.uppercards .col-2 {
     display: flex;
     justify-content: space-between;
 }
 
-.col-2 img{
+.col-2 img {
     max-width: 250px;
     margin-right: 3rem;
 }
 
-.phoneimg{
+.phoneimg {
     display: flex;
     align-self: flex-end;
 }
 
-body > main > div > div > div > div > div.mediumpadding{
+body>main>div>div>div>div>div.mediumpadding {
     max-width: 400px;
 }
 
-.centered{
+.centered {
     text-align: center;
 }
 
-.uppercards .icon{
+.uppercards .icon {
     font-size: 4.5rem;
     color: var(--color-secondary);
     text-align: center;
@@ -187,33 +215,84 @@ body > main > div > div > div > div > div.mediumpadding{
     padding-bottom: 1.5rem;
 }
 
-.radius{
+.radius {
     border-radius: 22px;
 }
 
-.nowrap{
+.nowrap {
     flex-wrap: nowrap;
 }
 
-body > main > div.section.bg-primary > div > div > div.col.bg-white.radius > div.centered > i {
-background-color: var(--color-primary);
-padding: 1rem;
-border-radius: 50%;
-display: inline-block;
-text-align: center;
-width: 50px;
-height: 50px;
+body>main>div.section.bg-primary>div>div>div.col.bg-white.radius>div.centered>i {
+    background-color: var(--color-primary);
+    padding: 1rem;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 50px;
+    height: 50px;
 }
 
-body > main > div.section.bg-primary > div > div > div:nth-child(1) > div > img{
+body>main>div.section.bg-primary>div>div>div:nth-child(1)>div>img {
     max-width: 400px;
 }
 
-body > main > div.section.bg-primary > div > div > div.col.bg-white.radius > div:nth-child(1) > img{
-    max-width: 300px;
+body>main>div.section.bg-primary>div>div>div.col.bg-white.radius>div:nth-child(1)>img {
+    max-width: 250px;
 }
 
-.devcard{
+.devcard {
     height: fit-content;
     align-self: flex-end;
+}
+
+.planningtitle {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white
+}
+
+body>main>div.section.bg-primary>div>div>div:nth-child(1)>p {
+    color: white;
+}
+
+body>main>div.section.bg-primary>div>div {
+    padding: 0 7rem;
+
+}
+
+body>main>div.section.bg-primary>div>div>div.col.bg-white.radius.devcard.mediumpadding {
+    border-radius: 65px;
+}
+
+.testimonials p {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+}
+
+.partnercard {
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-primary);
+    border-radius: 40px;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    color: white;
+}
+
+.partnerimg {
+    max-width: 200px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 2rem 0;
+}
+
+.partnercard i{
+    font-size: 2rem;
+}
+
+.partnername{
+    font-size: 1.1rem;
+    font-weight: 700;
 }
