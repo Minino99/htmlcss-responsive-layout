@@ -21,6 +21,8 @@ body{
     --color-secondary: #0084fd;
     --color-secondary-light: #b5ddff;
     --color-tertiary: #FDC15F;
+    --color-lightgrey: #62788A;
+    --gap: 1.5rem;
 }
 
 /* fine reset */
@@ -32,6 +34,28 @@ header{
     left: 0;
     right: 0;
     z-index: 1;
+}
+
+main{
+    padding-top: 90px;
+}
+
+.mediumpadding{
+    padding: 2rem;
+}
+
+.mediumpaddingbottom{
+    padding-bottom: 2.5rem;
+}
+
+.lowrlpadding{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.ultralrmargin{
+    margin-left: 9rem;
+    margin-right: 9rem;
 }
 
 .headercontainer{
@@ -48,12 +72,14 @@ header{
 }
 
 .section {
-    padding: 2rem 0;
+    padding-top: 2rem;
+    padding-bottom: 10rem;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
+    gap: var(--gap);
 }
 
 .col {
@@ -62,11 +88,11 @@ header{
 }
 
 .col-1 {
-    flex-basis: calc(100% / 3);
+    flex-basis: calc((100% / 3) - var(--gap));
 }
 
 .col-2 {
-    flex-basis: calc((100% / 3) * 2);
+    flex-basis: calc((100% / 3) * 2 - var(--gap));
 }
 
 .col-3 {
@@ -91,10 +117,103 @@ header{
 }
 
 .btn{
-    border-radius: 15px;
+    border-radius: 22px;
     padding: 0.5rem 0.8rem;
+    display: inline-block;
+    white-space: pre-wrap;
 }
 
 .bg-white{
     background-color: white;
+}
+
+.bg-secondary{
+    background-color: var(--color-secondary);
+}
+
+.bg-secondary-light{
+    background-color: var(--color-secondary-light);
+    border-radius: 22px;
+}
+
+.bg-primary{
+    background-color: var(--color-primary);
+}
+
+.uppercards h3{
+    color: var(--color-secondary);
+}
+
+.uppercards p{
+    color: var(--color-lightgrey);
+    font-weight: 700;
+    line-height: 1.5rem;
+}
+
+.uppercards .btn{
+    color: white;
+    font-weight: 700;
+    padding: 0.8rem 2.5rem;
+}
+
+.uppercards .col-2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-2 img{
+    max-width: 250px;
+    margin-right: 3rem;
+}
+
+.phoneimg{
+    display: flex;
+    align-self: flex-end;
+}
+
+body > main > div > div > div > div > div.mediumpadding{
+    max-width: 400px;
+}
+
+.centered{
+    text-align: center;
+}
+
+.uppercards .icon{
+    font-size: 4.5rem;
+    color: var(--color-secondary);
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.radius{
+    border-radius: 22px;
+}
+
+.nowrap{
+    flex-wrap: nowrap;
+}
+
+body > main > div.section.bg-primary > div > div > div.col.bg-white.radius > div.centered > i {
+background-color: var(--color-primary);
+padding: 1rem;
+border-radius: 50%;
+display: inline-block;
+text-align: center;
+width: 50px;
+height: 50px;
+}
+
+body > main > div.section.bg-primary > div > div > div:nth-child(1) > div > img{
+    max-width: 400px;
+}
+
+body > main > div.section.bg-primary > div > div > div.col.bg-white.radius > div:nth-child(1) > img{
+    max-width: 300px;
+}
+
+.devcard{
+    height: fit-content;
+    align-self: flex-end;
 }
