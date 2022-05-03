@@ -356,6 +356,10 @@ body>main>div.section.bg-primary>div>div>div.col.bg-white.radius.devcard.mediump
     position: relative;
 }
 
+.relative{
+    position: relative;
+}
+
 .aboutus .col-1{
     padding: 0rem 4rem;
 }
